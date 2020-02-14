@@ -1,11 +1,6 @@
 # Dependencies
 from flask import Flask, render_template, jsonify, request, redirect, url_for
 from inputs import ride_share_calcs
-# from flask_sqlalchemy import SQLAlchemy
-# from sqlalchemy import Column, Integer, String, Numeric
-# from flask_marshmallow import Marshmallow 
-# import simplejson
-
 
 app = Flask(__name__)
 
