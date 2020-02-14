@@ -1,3 +1,11 @@
+function startValue() {
+  return start_location;
+}
+function endValue() {
+  return end_location;
+}
+
+  
   //MapQuest Key
   L.mapquest.key = '6aMCYSpGBo4Eg20Lw7RljQ0nXcUGsA5S';
   
@@ -10,9 +18,10 @@
   });
 
   L.mapquest.directions().route({
-    start: '425 N. Wabash Ave., Chicago, IL 60611',
-    end: '255 E Grand Ave, Chicago, IL 60611'
+    start: start_location, //'425 N. Wabash Ave., Chicago, IL 60611',
+    end: end_location  //'255 E Grand Ave, Chicago, IL 60611'
   });
+
 //END MAIN CODE
 
   

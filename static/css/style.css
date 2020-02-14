@@ -134,3 +134,30 @@ h3 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida
 .white-text {
   color: white!important;
 }
+
+.header-bg{
+  background-image: url("../images/toy-car-uber-lyft_edit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  margin-top:0px;
+  margin-bottom:0px;
+  
+}
+
+.title{
+  position:absolute;
+  right:20px;
+  bottom: 20px;
+  font-size: 4em;
+  background: gainsboro;
+  padding: 5px;
+}
+
+.l-pad{
+  padding-left:  30px;
+}
+
+.container{
+  background-color: whitesmoke;
+}

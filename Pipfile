@@ -13,6 +13,13 @@ gunicorn = "*"
 flask-marshmallow = "*"
 simplejson = "*"
 marshmallow = "*"
+tensorflow = "*"
+numpy = "*"
+openweathermapy = "*"
+requests = "*"
+geopip = "*"
+pickle = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.7"
