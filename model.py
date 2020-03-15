@@ -19,7 +19,7 @@ def prediction_model(input_values):
     # Model the user inputs
     scaled_predict = model.predict(inputs_scaled)
 
-    # format output - one item in a list
+    # format basefare output - one item in a list
     fare = round(scaled_predict[0],2)
 
     return fare
