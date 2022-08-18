@@ -1,3 +1,14 @@
+# local files
+desktop.ini
+.DS_Store
+.vscode
+_dev/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,9 +138,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-#Google Drive files
-desktop.ini
-
-#Project Files
-#Resources

@@ -45,12 +45,12 @@
     </div>
   
     <div class="row row-min">
-      <div class="col-xs-6 col-md-6 col-lg-6 l-pad">   
+      <div class="col-xs-12 col-md-12 col-lg-12 l-pad">   
         {% if message %}
           <p class = "message">{{ message | safe }}</p>
         {% endif %}
         <form action="/submit" method="POST">
-          <div class="form-group">
+          <div class="form-group col-xs-4 col-md-4 col-lg-4">
             <h3>Start Location</h3>
             <input
               id='autocomplete1'
@@ -59,10 +59,10 @@
               placeholder="Enter the Starting Address"
               size=50
               onFocus='geolocate()'
-              
+              class='w-100'
             />
           </div>
-          <div class="form-group">
+          <div class="form-group col-xs-4 col-md-4 col-lg-4 w-100">
             <h3>End Location</h3>
             <input
               id='autocomplete2'
@@ -71,6 +71,7 @@
               placeholder="Enter the Final Address"
               size=50
               onFocus='geolocate()'
+              class='w-100'
             />
           </div>
           <!-- <div class="form-group">
@@ -82,24 +83,30 @@
               size=25
             />
           </div> -->
-          <input type='submit' value="Submit" class="btn btn-primary" />
+          <div class="col-xs-4 col-md-4 col-lg-4 w-100" style="padding-top:3em">
+            <input type='submit' value="Submit" class="btn btn-primary";/>
+          </div>
 
         </form>
-        {% if base_fare %}
-        <p class = "estimator">Ride Share Base Estimate: ${{ base_fare | safe }}</p>
-        <p class = "estimator">Ride Share Base Surcharge: ${{ base_surcharge | safe }}</p>
-        <p class = "estimator">Ride Share Special Surcharge: ${{ special_surcharge | safe }}</p>
-        <p class = "estimator">Ride Share Total Cost: ${{ total_cost | safe }}</p>
-        {% endif %}
       </div>
-      <div class="col-xs-6 col-md-6 col-lg-6 l-pad"> 
-        <div id = 'map' style="width: 100%;"></div>
+      
+        {% if base_fare %}
+        <div class="col-xs-12 col-md-12 col-lg-12 l-pad">
+          <p class = "estimator">Ride Share Total Cost: ${{ total_cost | safe }}</p>
+        </div>
+        {% endif %}
+      
+      <div class="col-xs-12 col-md-12 col-lg-12 l-pad "> 
+        <div id = 'map' class="embed-responsive embed-responsive-16by9" style="width: 100%; height:500px"></div>
       </div>
     </div>
     <div class ="row">
       <div class="col-xs-12 col-md-12 col-lg-12">   
-        <a href="/visual" class="btn btn-primary btn-lg" role="button" aria-disabled="true">View Chicago Ride Visualizations</a>
+        <a href="/visual" class="btn btn-primary btn-lg" style="margin-top: 1em;" role="button" aria-disabled="true">View Chicago Ride Visualizations</a>
       </div>
+      <div class="col-xs-12 col-md-12 col-lg-12">   
+        <p>Disclaimer: Neither this site nor the developers of this site are affiliated with any ridesharing providers, any business concern or the City of Chicago. This site is strictly for professional educational purposes and is not intended and should not be used or relied upon in any way whatsoever for any other purpose whether commercial or otherwise.</p>
+      </div>     
     </div>
     </div>
   </div>
