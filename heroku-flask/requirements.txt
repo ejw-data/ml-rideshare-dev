@@ -58,7 +58,7 @@ gevent==1.4.0
 glob2==0.6
 graphviz==0.13.2
 greenlet==0.4.15
-grpcio==1.16.1
+grpcio==1.53.0
 gunicorn==19.9.0
 h5py==2.9.0
 heapdict==1.0.0
